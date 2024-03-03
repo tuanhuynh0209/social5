@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039043628489",
+    "project_id": "social5-f016a",
+    "storage_bucket": "social5-f016a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039043628489:android:920a82f5edf71cc92d6c18",
+        "android_client_info": {
+          "package_name": "com.example.social5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM7O_0DIml8YJJIR4uIoMT3xw0ifBae64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

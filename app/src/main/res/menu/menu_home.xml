@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/newsfeed"
+        android:title="@string/bangtin"
+        android:icon="@drawable/newspaper"
+        android:checked="true"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/img"
+        android:icon="@drawable/img"/>
+    <item
+        android:id="@+id/users"
+        android:title="@string/setting"
+        android:icon="@drawable/user"/>
+
+
+        <item
+            android:id="@+id/notifications"
+            android:title="@string/notification"
+            android:icon="@drawable/baseline_notifications_24"/>
+
+    </group>
+    
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity" >
+
+
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập tiêu đề"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:background="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/texttext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Nhập mô tả"
+        android:inputType="text"
+        android:minHeight="120dp" />
+
+    <Button
+        android:id="@+id/buttonload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng" />
+</LinearLayout>
