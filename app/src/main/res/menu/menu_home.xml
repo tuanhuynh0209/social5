@@ -12,7 +12,7 @@
     <item
         android:id="@+id/profile"
         android:title="@string/img"
-        android:icon="@drawable/img"/>
+        android:icon="@drawable/background"/>
     <item
         android:id="@+id/users"
         android:title="@string/setting"

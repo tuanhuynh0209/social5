@@ -25,23 +25,26 @@
                 android:orientation="horizontal">
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/button51"
                     android:layout_width="53dp"
+                    android:background="@drawable/bg_edittext"
                     android:layout_height="match_parent"
                     android:backgroundTint="#E91E63"
-                    android:text="+" />
+                    android:src="@drawable/camera"/>
 
                 <SearchView
                     android:id="@+id/searchpost"
-                    android:layout_width="54dp"
+                    android:layout_width="match_parent"
                     android:layout_height="51dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="1dp"
                     app:layout_constraintStart_toEndOf="@+id/button51"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/bg_edittext">
 
                 </SearchView>
+
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView

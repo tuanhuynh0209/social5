@@ -14,28 +14,33 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:background="@drawable/bg_edittext">
 
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/button51"
+                    android:layout_width="53dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#E91E63"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
                 <Button
                     android:id="@+id/btnLogout"
                     android:layout_width="46dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/baseline_logout_24"
-                    android:backgroundTint="#E6E6E6" />
+                    android:backgroundTint="#E6E6E6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
 
-                <Button
-                    android:id="@+id/button51"
-                    android:layout_width="55dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignRight="@id/btnLogout"
 
-                    android:backgroundTint="#E91E63"
-                    android:text="+" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/linearLayout"

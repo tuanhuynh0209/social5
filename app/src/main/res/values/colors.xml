@@ -3,4 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#673AB7</color>
+
+    <color name="NewFeeds">#1194AA</color>
+    <color name="Search">#C9379D</color>
+    <color name="Notifi">#AE7E0F</color>
+    <color name="Account">#5B37B7</color>
+
+    <color name="NewFeeds_20">#331194AA</color>
+    <color name="Search_20">#33C9379D</color>
+    <color name="Notifi_20">#33AE7E0F</color>
+    <color name="Account_20">#335B37B7</color>
 </resources>
