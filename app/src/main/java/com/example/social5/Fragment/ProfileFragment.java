@@ -39,6 +39,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ProfileFragment extends Fragment {
 
     FirebaseAuth firebaseAuth;
@@ -128,6 +129,8 @@ public class ProfileFragment extends Fragment {
                     nameTV.setText(name);
                     emailTV.setText(email);
                     phoneTV.setText(phone);
+                    Picasso.get().load(image).into(avatarIv);
+
                     try {
                         Picasso.get().load(image).into(avatarIv);
                     }

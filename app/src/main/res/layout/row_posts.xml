@@ -152,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:stateListAnimator="@animator/anim_btnlike"
+
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/baseline_thumb_up_24"
                 android:drawablePadding="5dp"
@@ -185,7 +185,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:background="@color/black"/>
+            android:background="@color/space"/>
     </LinearLayout>
 
 

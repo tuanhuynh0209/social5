@@ -13,4 +13,11 @@
     <color name="Search_20">#33C9379D</color>
     <color name="Notifi_20">#33AE7E0F</color>
     <color name="Account_20">#335B37B7</color>
+    <color name="space">#C5C5C5</color>
+    <color name="button">#CECECE</color>
+    <color name="primary">#F97794</color>
+    <color name="icon">#4a4a4a</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="foreground">#E7E7E7</color>
+    <color name="buttonfollow">#6979F8</color>
 </resources>

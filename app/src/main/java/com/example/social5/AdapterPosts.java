@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
@@ -20,8 +19,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.social5.Fragment.ProfileFragment;
-import com.example.social5.Fragment.UsersFragment;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,7 +37,6 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
 
@@ -71,8 +67,9 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         return new MyHolder(view);
     }
 
+    @SuppressLint({"SuspiciousIndentation", "SetTextI18n"})
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder,int i) {
+    public void onBindViewHolder(@NonNull MyHolder myHolder,@SuppressLint("RecyclerView")int i) {
         String uid = postList.get(i).getUid();
         String uEmail = postList.get(i).getuEmail();
         String uName = postList.get(i).getuName();
@@ -160,14 +157,18 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
                             if(dataSnapshot.child(postIde).hasChild(myUid)){
                                 postsRef.child(postIde).child("pLikes").setValue("" +(pLikes - 1));
                                 likesRef.child(postIde).child(myUid).removeValue();
+                                notifyItemChanged(i);
                                 mProcessLike = false;
+
                             }
                             else {
                                 postsRef.child(postIde).child("pLikes").setValue(""+(pLikes +  1));
                                 likesRef.child(postIde).child(myUid).setValue("Liked");
+                                notifyItemChanged(i);
                                 mProcessLike = false;
 
                                 addToHisNotifications("" +uid,""+pId,"Đã thích bài viết của bạn");
+
                             }
                         }
                     }
@@ -228,6 +229,7 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
                 {
                     holder.likebtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.baseline_thumb_up_liked, 0,0,0);
                     holder.likebtn.setText("Liked");
+
                 }
                 else{
                     holder.likebtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.baseline_thumb_up_24, 0,0,0);
